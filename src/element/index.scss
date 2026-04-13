@@ -1,0 +1,17 @@
+// 自定义Element Plus主题变量
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    primary: (
+      base: #409eff, // 主色（可改：比如#1890ff）
+    ),
+    success: (
+      base: #67c23a, // 成功色
+    ),
+    danger: (
+      base: #f56c6c, // 危险色
+    )
+  )
+);
+
+// 导入Element Plus的基础样式
+@use 'element-plus/theme-chalk/src/index.scss' as *;
